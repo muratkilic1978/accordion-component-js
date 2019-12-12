@@ -1,16 +1,45 @@
+body {
+    font-family: Arial, Helvetica, Verdana;
+}
+
 .content {
     display: none;
     padding: 20px;
-    font-size: 0.8em;
+    font-size: 1.2em;
     border: 1px solid black;
+    letter-spacing: 0.2em;
     
 }
 
 .main {
-    font-size: 1.5em;
-    background-color: #ddd;
+    font-size: 1.6em;
+    background: #00c17c;
+    cursor: pointer;
+    padding: 5px;
+    margin: 5px 0;
+    
 }
 
 .active {
     display: block;
+    
 }
+
+.main:hover:After {
+    display: block;
+    background-color: lightgreen;
+    content: '\2796';
+    
+}
+
+.main:after {
+    content: '\02795';
+    font-size: 15px;
+    float: right;
+    margin-left: 5px;
+}
+
+/*
+.main:after {
+    content: '\2796';
+}*/
